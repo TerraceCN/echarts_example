@@ -17,6 +17,8 @@ jobs:
           node-version: 16
 
       - name: Build
+        env:
+          BASE_URL: '/echarts_example/'
         run: |
           yarn install
           yarn build
