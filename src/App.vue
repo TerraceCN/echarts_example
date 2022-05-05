@@ -7,14 +7,23 @@
     </a-layout-header>
 
     <a-layout-content class="content">
-      <h1>日气温</h1>
+      <h1>扬州2021年日气温</h1>
       <temp-line />
       
-      <h1>月平均气温</h1>
+      <h1>扬州2021年月平均气温</h1>
       <avg-temp-bar />
 
-      <h1>天气类型</h1>
+      <h1>扬州2021年天气类型统计</h1>
       <weather-pie />
+
+      <h1>象形表</h1>
+      <speed-graph />
+
+      <h1>文字动画</h1>
+      <text-animation />
+
+      <h1>自定义系列</h1>
+      <wind-vector />
 
       <a-button type="dashed" block @click="moreExample">更多样例</a-button>
     </a-layout-content>
@@ -37,12 +46,18 @@ import { defineComponent } from 'vue';
 import TempLine from './components/TempLine.vue';
 import AvgTempBar from './components/AvgTempBar.vue';
 import WeatherPie from './components/WeatherPie.vue';
+import SpeedGraph from './components/SpeedGraph.vue';
+import TextAnimation from './components/TextAnimation.vue';
+import WindVector from './components/WindVector.vue';
 
 export default defineComponent({
   components: {
     TempLine,
     AvgTempBar,
     WeatherPie,
+    SpeedGraph,
+    TextAnimation,
+    WindVector,
   },
   setup() {
     function moreExample() {

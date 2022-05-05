@@ -13,8 +13,13 @@ declare module '@vue/runtime-core' {
     ATabPane: typeof import('ant-design-vue/es')['TabPane']
     ATabs: typeof import('ant-design-vue/es')['Tabs']
     AvgTempBar: typeof import('./src/components/AvgTempBar.vue')['default']
+    'AvgTempBar copy': typeof import('./src/components/AvgTempBar copy.vue')['default']
+    BeefCuts: typeof import('./src/components/BeefCuts.vue')['default']
+    SpeedGraph: typeof import('./src/components/SpeedGraph.vue')['default']
     TempLine: typeof import('./src/components/TempLine.vue')['default']
+    TextAnimation: typeof import('./src/components/TextAnimation.vue')['default']
     WeatherPie: typeof import('./src/components/WeatherPie.vue')['default']
+    WindVector: typeof import('./src/components/WindVector.vue')['default']
   }
 }
 
